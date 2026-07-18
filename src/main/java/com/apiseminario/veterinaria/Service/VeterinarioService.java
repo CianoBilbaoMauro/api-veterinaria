@@ -38,10 +38,10 @@ public class VeterinarioService {
         veterinario.setApellido(veterinarioNuevo.getApellido());
         veterinario.setEspecialidad(veterinarioNuevo.getEspecialidad());
         veterinario.setMatricula(veterinarioNuevo.getMatricula());
+        veterinario.setClinicaVeterinaria(veterinarioNuevo.getClinicaVeterinaria());
 
         return veterinarioRepository.save(veterinario);
     }
-
 
     public void eliminarVeterinario(Long id) {
 

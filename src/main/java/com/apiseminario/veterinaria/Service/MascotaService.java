@@ -32,7 +32,6 @@ public class MascotaService {
         return mascotaRepository.save(mascota);
     }
 
-
     // Actualizar mascota
     public Mascota actualizarMascota(Long id, Mascota mascotaNueva) {
 
@@ -43,6 +42,7 @@ public class MascotaService {
         mascota.setRaza(mascotaNueva.getRaza());
         mascota.setEdad(mascotaNueva.getEdad());
         mascota.setPeso(mascotaNueva.getPeso());
+        mascota.setDuenio(mascotaNueva.getDuenio());
 
         return mascotaRepository.save(mascota);
     }

@@ -12,13 +12,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-
-
 public class Duenio {
-
-    @ManyToOne
-    @JoinColumn(name = "duenio_id")
-    private Duenio duenio;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
